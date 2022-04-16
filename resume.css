@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+ul li {
+    list-style-type: none !important; 
+}
+a {
+    text-decoration: none !important;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(242, 213, 166);
+    flex-flow: row wrap;
+    justify-content: center;
+    color: white;
+    width:auto;
+}
+.snip {
+  background-color: #be8a3a;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 16px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 12px 35px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.snip:before,
+.snip:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.snip:before {
+  border-color: #c47135;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.snip:after {
+  border-bottom-width: 2px;
+  border-color: #c47135;
+  bottom: -5px;
+  right: 0px;
+}
+
+.snip:hover,
+.snip.hover {
+  background-color: #c47135;
+}
+
+.snip:hover:before,
+.snip.hover:before,
+.snip:hover:after,
+.snip.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.main-resume .left img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+}
+.main-resume .left ul li {
+    
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 100px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+
+.row .column h3 {
+      text-align: center;
+      padding: 10px;
+  }
+.row .column p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.row-music {
+    display: block;
+    width: 40%;
+}
+.row-music .column-music ul li {
+    padding:35px;
+}
+.row-music .column-music ul a {
+    padding: 20px;
+    margin-left: 100px;
+    float: left;
+}
+.row-music .column-music ul a:hover{
+    background-color: rgb(242, 213, 166);
+    border-radius: 100px;
+    color: white;
+}
