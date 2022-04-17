@@ -79,12 +79,10 @@ a {
 
 .main-resume .left img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     height: 200px;
 }
 .main-resume .left ul li {
-    
     text-align: center;
     margin: 20px;
     font-size: 20px;
@@ -127,10 +125,37 @@ a {
 .row-music .column-music ul a {
     padding: 20px;
     margin-left: 100px;
-    float: left;
 }
 .row-music .column-music ul a:hover{
     background-color: rgb(242, 213, 166);
     border-radius: 100px;
     color: white;
 }
+.header-pic {
+    background-image: url("https://img.idesign.vn/w1600/2018/09/19/286906/idesign_lac-vao-the-gioi-khac-qua-bo-anh-tu-xanh-hoa-vang-cua-nhiep-anh-gia-nguoi-phap_thumb.jpeg");
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+  width: 100%;
+}
+.row-game {
+  width: 100%;
+}
+.row-game .item-game {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+}
+.row-game .item-game-img{
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+.row-game .item-game-img img {
+  width: 100%;
+}
+

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+ul li {
+  list-style-type: none !important; 
+}
+a {
+  text-decoration: none !important;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(242, 213, 166);
+    flex-flow: row wrap;
+    justify-content: center;
+    color: white;
+    width:auto;
+}
+.snip {
+  background-color: #be8a3a;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 16px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 12px 35px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.snip:before,
+.snip:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.snip:before {
+  border-color: #c47135;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.snip:after {
+  border-bottom-width: 2px;
+  border-color: #c47135;
+  bottom: -5px;
+  right: 0px;
+}
+
+.snip:hover,
+.snip.hover {
+  background-color: #c47135;
+}
+
+.snip:hover:before,
+.snip.hover:before,
+.snip:hover:after,
+.snip.hover:after {
+  height: 100%;
+  width: 100%;
+}
+.header-pic {
+  background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2018/09/hinh-nen-thu-do-Paris-nuoc-Phap-ruc-ro-ve-dem.jpg');
+  width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
