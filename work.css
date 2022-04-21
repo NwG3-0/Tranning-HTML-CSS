@@ -1,23 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
 }
 ul li {
-  list-style-type: none !important; 
+  list-style-type: none !important;
 }
 a {
   text-decoration: none !important;
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(242, 213, 166);
-    flex-flow: row wrap;
-    justify-content: center;
-    color: white;
-    width:auto;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(242, 213, 166);
+  flex-flow: row wrap;
+  justify-content: center;
+  color: white;
+  width: auto;
 }
 .snip {
   background-color: #be8a3a;
@@ -25,7 +25,7 @@ a {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'BenchNine', Arial, sans-serif;
+  font-family: "BenchNine", Arial, sans-serif;
   font-size: 1em;
   font-size: 16px;
   line-height: 1em;
@@ -77,9 +77,76 @@ a {
   width: 100%;
 }
 .header-pic {
-  background-image: url('https://thuthuatnhanh.com/wp-content/uploads/2018/09/hinh-nen-thu-do-Paris-nuoc-Phap-ruc-ro-ve-dem.jpg');
+  background-image: url("https://thuthuatnhanh.com/wp-content/uploads/2018/09/hinh-nen-thu-do-Paris-nuoc-Phap-ruc-ro-ve-dem.jpg");
   width: 100%;
-    height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+body {
+  width: 100%;
+}
+.main-work {
+  width: 100%;
+  margin-top: 100px;
+}
+.main-work .item {
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+.main-work .item .item-img {
+  width: 60%;
+  overflow: hidden;
+}
+.main-work .item .item-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.main-work .item .item-content {
+  margin-left: 20px;
+}
+
+.center .content .content-img img {
+  display: block;
+  margin: auto;
+  height: 200px;
+}
+.center .content h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 100px;
+}
+.row .column ul li {
+  text-align: center;
+  margin: 43px;
+  font-size: 16px;
+}
+.row .column ul img {
+  margin-top: 8px;
+  vertical-align: middle;
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+.row .column ul img:hover {
+  background-color: rgb(242, 213, 166);
+  border-radius: 120px;
+  color: white;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+

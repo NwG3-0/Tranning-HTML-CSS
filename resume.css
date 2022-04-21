@@ -92,7 +92,6 @@ a {
     display: flex;
     flex-wrap: wrap;
 }
-
 .column {
     flex: 33%;
     max-width: 33%;
@@ -152,7 +151,6 @@ body{
 }
 .row-game .item-game-img{
   width: 80%;
-  position: relative;
   margin: auto;
 }
 .row-game .item-game-img img {

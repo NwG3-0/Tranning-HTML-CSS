@@ -83,3 +83,49 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+body {
+  width: 100%;
+}
+.main-blog {
+  width: 100%;
+  margin: 50px;
+}
+.main-blog .item {
+  display: flex;
+  width: 70%;
+  flex-direction: column;  
+}
+.main-blog .item .header-blog h1{
+  margin-bottom: 20px;
+}
+.main-blog .item .body-blog h3{
+  margin-bottom: 20px;
+}
+.main-blog .item .body-blog img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.main-blog .item .body-blog p{
+  margin-bottom: 20px;
+}
+img{
+  width: 5%;
+  float: right;
+}
+
+body{
+  width: 100%;
+}
+.main-contact {
+  width: 100%;
+}
+.main-contact .item{
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+.main-contact .item .fb.contact{
+  width: 60%;
+  overflow: hidden;
+}

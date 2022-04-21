@@ -84,3 +84,25 @@
     background-size: cover;
   }
   
+
+  body{
+    width: 100%;
+  }
+  .main-contact{
+    width: 100%;
+  }
+  .main-contact .item{
+    width: 90%;
+  }
+  .main-contact .item .fb-contact {
+    display: flex;
+    justify-content: center;
+  }
+  .main-contact .item .fb-contact a{
+    margin-top: 60px;
+    font-size: 20px;
+  }
+  .main-contact .item .fb-contact img {
+    width: 100px;
+    margin: 25px;
+  }
