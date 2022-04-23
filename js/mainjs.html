@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainjs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="face">
+        <div class="d">
+            <h3>cách 1: inline</h3>
+            <button class="click" onclick="document.getElementById('change1').src='https://ss-images.saostar.vn/wp700/2020/04/24/7393241/a.jpg'">left click</button>
+            <img id="change1" src="https://upanh123.com/wp-content/uploads/2021/04/anh-dep-tren-mang1.jpg" alt="">
+            <button class="click" onclick="document.getElementById('change1').src='https://i.pinimg.com/originals/4b/30/7c/4b307c289e8b5101754ec0a9c31fc7b1.jpg'">right click</button>
+        </div>
+    </div>
+
+    <div class="face">
+        <div class="d">
+            <h3>cách 2: internal</h3>
+            <button class="click" onclick="myfunction1()">left click</button>
+            <img id="change2" src="https://i.pinimg.com/564x/10/1e/c8/101ec85748f1a0c2f19b3f0680130ec3.jpg" alt="">
+            <button class="click" onclick="myfunction2()">right click</button>
+        </div>
+    </div>
+    <script>
+        function myfunction1() {
+            document.getElementById("change2").src = "https://i.9mobi.vn/cf/Images/huy/2021/12/6/anh-gai-xinh-9.jpg";
+        }
+
+        function myfunction2() {
+            document.getElementById("change2").src = "https://static2.yan.vn/YanNews/2167221/201908/unnamed1534335585002601535775-7dca493c.jpg";
+        }
+    </script>
+
+    <div class="face">
+        <div class="d">
+            <h3>cách 3: external</h3>
+            <button class="click" onclick="myfunction3()">left click</button>
+            <img id="change3" src="https://hongbiencang.com/images/news/2020/03/16/chf_1584371701.jpg" alt="">
+            <button class="click" onclick="myfunction4()">right click</button>
+        </div>
+    </div>
+    <script src="mainjs.js"></script>
+
+    <div class="face">
+        <div class="d">
+            <h3>inner trong HTML</h3>
+            <p id="demo">chú ý ở đây nè</p>
+            <script>
+                document.getElementById("demo").innerHTML = 7 + 7;
+            </script>
+        </div>
+    </div>
+
+    <div class="face">
+        <div class="d">
+            <h3>sử dụng document.write()</h3>
+            <button class="click" onclick="window.location.href='onclick.html'">click để chạy document.write()</button>
+        </div>
+    </div>
+
+    <div class="face">
+        <div class="d">
+            <h3>sử dụng window.alert()</h3>
+            <button class="click" onclick="window.alert('hiện lên ở đây')">click để chạy window.alert()</button>
+        </div>
+    </div>
+
+    <div class="face">
+        <div class="d">
+            <h3>sử dụng window.print()</h3>
+            <button class="click" onclick="window.print()">click để print</button>
+        </div>
+    </div>
+
+    <div class="face">
+        <div class="d">
+            <h3>JS statement</h3>
+            <p id="let1"></p>
+
+        </div>
+    </div>
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById("let1").innerHTML = c;
+    </script>
+
+    <div class="face">
+        <div class="d">
+            <h3>let, var, const</h3>
+            <p>let biến cục bộ</p>
+            <p>var biến global</p>
+            <p>const không thể thay đổi giá trị</p>
+            <div class="add">
+                <h4>đây là dùng const</h4>
+                <p id="total"></p>
+                <script>
+                    const price1 = 5;
+                    const price2 = 6;
+                    var total = price1 + price2;
+                    document.getElementById('total').innerHTML = total;
+                </script>
+                <p>trong js ký tự $ và _ được coi là letter</p>
+                <p>có thể thay đổi giá trị trong array biến const nhưng không được đặt lại biến const <br> let cũng không được đặt lại hay gọi lại tên biến kể cả khi biến cũ là var
+                    <br> ví dụ var x=3; let x=2; //error</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
